@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript FOR, WHILE</title>
+    </head>
+    <body>
+        <h1>JavaScript - FOR, WHILE - циклы </h1>
+        <h2>Сумма натуральных чисел 1-N</h2>
+        <script>
+            //Задание: Посчитать сумму натуральных чисел
+            //От 1 до числа N. Число N спросить у пользователя
+            //Сумму чисел вывести на страницу
+            //--------------Цикл FOR
+            document.write('<h3>Цикл FOR<h3>');
+            var count = prompt('Сумма чисел от 1 до ...\n Введите число',5);
+                var summa = 0;
+                
+                for(var i=1;i<=count;i++) {
+                    summa = summa+i;
+                     document.write('<br>'+(i)+' . Промежуточная сумма - '+ summa);
+
+                }
+                document.write('<br>FOR - Итого сумма чисел 1 - '+count+' равна '+summa);
+
+                //----------------------Цикл WHILE - цикл с условием - до тех пор пока...
+                document.write('<h3>Цикл WHILE</h3>');
+                var counter = 1;//счетчик цикла
+                summa = 0;
+                while(counter<=count){
+                    summa+=counter;// summa = summa + counter;
+                    document.write('<br>'+(counter)+'. Промежуточная сумма - '+ summa);
+                    counter++;
+
+                }
+                document.write('<br>WHILE - сумма чисел 1 - '+count+' равна '+summa);
+        </script>
+        
+    </body>
+</html>
